@@ -1,6 +1,8 @@
 {
 	"name": "saihu",
-	"version": "0.16.0",
+	"version": "0.17.0",
+	"description": "Client side chatbot framework that can be run in the command line",
+	"author": "Fred Lin <gasolin+saihubot@gmail.com>",
 	"license": "MIT",
 	"bin": "dist/cli.js",
 	"engines": {
@@ -10,7 +12,15 @@
 		"saihubot",
 		"chatbot",
 		"devops"
-	  ],
+	],
+	"repository": {
+      "type": "git",
+      "url": "git+https://github.com/gasolin/saihubot.git"
+	},
+	"bugs": {
+		"url": "https://github.com/gasolin/saihubot/issues"
+	},
+	"homepage": "https://github.com/gasolin/saihubot",
 	"scripts": {
 		"start": "babel-node --presets @babel/preset-env src/cli.js",
 		"build": "babel ./src --out-dir ./dist --copy-files",
