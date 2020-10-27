@@ -7,17 +7,18 @@ The Saihubot-cli project is derived from https://github.com/gasolin/saihubot , a
 
 # Try it
 
-Install via `npm install saihubot-cli`
+Install via `npm install saihu`
 
-Then you can use `sai` command to
-```
-$ sai today
+Then you can use `saihu` command to perform some skills
+
+```sh
+$ saihu today
 - weather
 - history
 
-$ sai google [something]
-$ sai g [something] // shortcut
-$ sai tr [word] // shortcut of googletranslate
+$ saihu google [something]
+$ saihu g [something] // shortcut
+$ saihu tr [word] // shortcut of googletranslate
 ```
 
 # Customize
@@ -36,7 +37,7 @@ $ npm install
 ## CLI
 
 ```
-$ sai --help
+$ saihu --help
 
   Usage
     $ sai
@@ -64,9 +65,9 @@ npx babel-node --presets @babel/preset-env cli.js --debug ping
 $ git clone https://github.com/gasolin/saihubot-cli
 $ npm install && npm run build && npm install -g
 $ cd ~ // cli bot can run from anywhere
-$ sai ping
+$ saihu ping
 PONG
-$ sai github saihubot
+$ saihu github saihubot
 ```
 
 ## Reference

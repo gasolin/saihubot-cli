@@ -1,11 +1,16 @@
 {
-	"name": "sai",
-	"version": "0.14.0",
+	"name": "saihu",
+	"version": "0.16.0",
 	"license": "MIT",
 	"bin": "dist/cli.js",
 	"engines": {
 		"node": ">=10"
 	},
+	"keywords": [
+		"saihubot",
+		"chatbot",
+		"devops"
+	  ],
 	"scripts": {
 		"start": "babel-node --presets @babel/preset-env src/cli.js",
 		"build": "babel ./src --out-dir ./dist --copy-files",

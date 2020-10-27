@@ -10,15 +10,15 @@ import { addonConfirm } from './addons/saihubot-addon-dialog-cli'
 
 const cli = meow(`
 	Usage
-    $ sai
+    $ saihu
 
 	Options
 		--debug show debug messages
 
 	Examples
-    $ sai ping
+    $ saihu ping
 	🤖: PONG
-	$ sai npm saihubot
+	$ saihu npm saihubot
 `, {
 	flags: {
 		debug: {
