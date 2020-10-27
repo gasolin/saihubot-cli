@@ -1,17 +1,16 @@
 {
 	"name": "sai",
-	"version": "0.13.0",
+	"version": "0.14.0",
 	"license": "MIT",
 	"bin": "dist/cli.js",
 	"engines": {
 		"node": ">=10"
 	},
 	"scripts": {
-		"setup-submodule": "git submodule update --init --recursive",
 		"start": "babel-node --presets @babel/preset-env src/cli.js",
 		"build": "babel ./src --out-dir ./dist --copy-files",
+		"prepublish": "npm run build",
 		"test": "xo && ava",
-		"update-saihubot": "git submodule foreach --recursive git pull origin gh-pages"
 	},
 	"dependencies": {
 		"dedent": "^0.7.0",

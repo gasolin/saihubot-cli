@@ -1,7 +1,29 @@
-# saihubot-cli
+# Saihubot-cli
+# Saihubot [![NPM version][npm-image]][npm-url]
+:robot: Frontend Framework to build :speech_balloon: message/chat bots ops in the :globe_with_meridians: **Command Line**, no server required.
 
-https://github.com/gasolin/saihubot
+The Saihubot-cli project is derived from https://github.com/gasolin/saihubot , and can share most of skills between them.
 
+# Try it
+
+Install via `npm install saihubot-cli`
+
+Then you can use `sai` command to
+```
+$ sai today
+- weather
+- history
+
+$ sai google [something]
+$ sai g [something] // shortcut
+$ sai tr [word] // shortcut of googletranslate
+```
+
+# Customize
+
+You can download the source and modify to customize your cli bot.
+
+More skills can be found in https://github.com/gasolin/saihubot/tree/gh-pages/src/skills
 
 ## Install
 
