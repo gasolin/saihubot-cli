@@ -10,7 +10,7 @@
 		"start": "babel-node --presets @babel/preset-env src/cli.js",
 		"build": "babel ./src --out-dir ./dist --copy-files",
 		"prepublish": "npm run build",
-		"test": "xo && ava",
+		"test": "xo && ava"
 	},
 	"dependencies": {
 		"dedent": "^0.7.0",
