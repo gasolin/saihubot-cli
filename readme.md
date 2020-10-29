@@ -1,9 +1,15 @@
-# Saihubot-cli [![NPM version][npm-image]][npm-url]
+# Saihubot-cli
+
 :robot: Frontend Framework to build :speech_balloon: message/chat bots ops in the :globe_with_meridians: **Command Line**, no server required.
 
-[![](https://github.com/gasolin/saihubot/workflows/lint/badge.svg)](https://github.com/gasolin/saihubot/actions?query=workflow%3Alint)
 
-The Saihubot-cli project is derived from https://github.com/gasolin/saihubot , and can share most of skills between them.
+## Features
+
+* Chatbot works in your browser, without server setup.
+* Written in plain Javascript, compatible with modern browsers
+* Reusable skills (search) between web and commandline, derived from [saihubot](https://github.com/gasolin/saihubot).
+* Messages in Markdown format by default
+
 
 # Try it
 
