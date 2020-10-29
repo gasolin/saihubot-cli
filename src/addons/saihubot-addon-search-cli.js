@@ -9,6 +9,14 @@ function openTab(url) {
   execa('open', [`${url}`]).stdout.pipe(process.stdout);
 }
 
+export const addonOpenLink = {
+	name: 'openLink',
+	requirements: {
+    platform: ['cli'],
+  },
+  action: (robot) => (url) => openTab(url),
+};
+
 /**
  * Render search response message.
  *
@@ -18,8 +26,10 @@ function openTab(url) {
  * @param {String} engine search engine
  */
 export const addonSearch = {
-  name: 'search',
-  requirements: [],
+	name: 'search',
+	requirements: {
+    platform: ['cli'],
+  },
   action: (robot) => (action, term, url, engine) => {
     robot.send(`${action} [${term}](${url}) via ${engine}`);
     openTab(url);

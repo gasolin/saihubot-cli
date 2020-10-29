@@ -7,7 +7,9 @@ import SelectInput from 'ink-select-input';
 // addon that provide confirm and selection dialog
 export const addonConfirm = {
   name: 'confirm',
-  requirements: [],
+  requirements: {
+    platform: ['cli'],
+  },
   action: (robot) => (title, items) => {
     const Msg = () => {
       // first arg is title msg

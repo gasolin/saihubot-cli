@@ -28,9 +28,9 @@ const cli = meow(`
 	}
 });
 
-const skill_sample = {
+const skillToday = {
   name: 'today',
-  help: 'today - show today selections',
+  help: 'today - Show today selections',
   requirements: [],
   rule: /TODAY/i,
   action: function(robot, msg) {
@@ -53,7 +53,7 @@ const skill_sample = {
 
 const bot = new SaihuBot({
 	adapter: cliAdapter(cli),
-    skills: [...skills, ...searchSkills, skill_sample],
+    skills: [...skills, ...searchSkills, skillToday],
 	addons: [addonSearch, addonConfirm],
 	bot: '🤖',
 	debug: cli.flags && cli.flags.debug,

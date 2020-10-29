@@ -9,7 +9,8 @@ const Msg = ({message}) => (<Markdown>{dedent(message)}</Markdown>);
 // Commandline adapter based on https://github.com/vadimdemedes/ink
 const cliAdapter = (cli) => ({
   // essential functions
-  name: 'command line',
+	name: 'cli',
+	description: 'Command Line',
   run: function(robot) {
     this.robot = robot;
     this.ui = robot.ui;
