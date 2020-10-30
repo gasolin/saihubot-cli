@@ -1,5 +1,7 @@
 # Saihubot-cli
 
+** This project is deprecated and moved to https://github.com/gasolin/saihubot/tree/gh-pages/packages/cli and https://github.com/gasolin/saihubot/tree/gh-pages/packages/cli-adapter **
+
 :robot: Frontend Framework to build :speech_balloon: message/chat bots ops in the :globe_with_meridians: **Command Line**, no server required.
 
 
